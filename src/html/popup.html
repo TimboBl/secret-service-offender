@@ -5,6 +5,7 @@
     <title>Secret Service Offender</title>
     <link rel="stylesheet" href="../styles/bootstrap-4.1.1-dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../styles/custom/custom.css"/>
+    <script type="text/javascript" src="../js/popup/popup.js"></script>
 </head>
 <body>
 <header>
@@ -15,8 +16,15 @@
 <hr/>
 <div class="container-fluid">
     These are all the headers you added!
+    <label>Header Key: </label>
+    <input type="text" id="key"/>
+    <label>Header Value: </label>
+    <input type="text" id="value"/>
 </div>
-
-<script type="text/javascript" src="../styles/bootstrap-4.1.1-dist/js/bootstrap.min.js"/>
+<footer>
+    <button class="btn btn-primary btn-right" id="save">Save Headers</button>
+</footer>
+<script type="text/javascript" src="../js/popup/jquery.js"></script>
+<script type="text/javascript" src="../styles/bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
