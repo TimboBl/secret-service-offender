@@ -4,27 +4,34 @@
     <meta charset="UTF-8">
     <title>Secret Service Offender</title>
     <link rel="stylesheet" href="../styles/bootstrap-4.1.1-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../styles/icons/fontawesome-all.css"/>
     <link rel="stylesheet" href="../styles/custom/custom.css"/>
     <script type="text/javascript" src="../js/popup/popup.js"></script>
+    <script type="text/javascript" src="../js/popup/jquery.js"></script>
+    <script type="text/javascript" src="../styles/bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>
 </head>
 <body>
 <header>
     <div class="title">
-        Secret Service Offender
+        <h3>Secret Service Offender</h3>
     </div>
 </header>
 <hr/>
 <div class="container-fluid">
-    These are all the headers you added!
-    <label>Header Key: </label>
-    <input type="text" id="key"/>
-    <label>Header Value: </label>
-    <input type="text" id="value"/>
+    <div class="alert alert-success" id="success-alert">
+        <button type="button" class="close" data-dismiss="alert">x</button>
+        <strong>Success! </strong>
+        Your custom headers will now be sent on each request!
+    </div>
+    <div>
+        <label class="headline">These are all the headers you added!</label>
+        <button class="icon-button btn-right" id="plus"><span class="fas fa-plus"></span></button>
+    </div>
+    <div id="content">
+    </div>
 </div>
 <footer>
     <button class="btn btn-primary btn-right" id="save">Save Headers</button>
 </footer>
-<script type="text/javascript" src="../js/popup/jquery.js"></script>
-<script type="text/javascript" src="../styles/bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>
 </body>
 </html>

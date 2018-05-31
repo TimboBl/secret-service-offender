@@ -1,26 +1,38 @@
 header {
     text-align: center;
-    background: #455d87;
 }
 
 body {
-    width: 300px;
+    width: 325px;
     height: 100%;
 }
 
 .container-fluid {
-    text-align: center;
     padding: 0;
+    margin: 0 0 0 5px;
 }
 
 .title {
-    padding-top: 10px;
+    padding-top: 12px;
 }
 
-label {
+.descriptor {
     width: 110px;
 }
 
 .btn-right {
     float: right;
+    margin: 0 5px 5px 0;
+}
+
+
+.headline {
+    padding-bottom: 8px;
+}
+
+.icon-button {
+    outline: none;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
 }
